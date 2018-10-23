@@ -1,0 +1,29 @@
+{
+  "name": "web-scrape",
+  "version": "1.0.0",
+  "description": "mongodb, mongoose, cheerio, axios, webscraping into DB, using MVC framework",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrandonSCorry/web-scrape.git"
+  },
+  "author": "brandon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrandonSCorry/web-scrape/issues"
+  },
+  "homepage": "https://github.com/BrandonSCorry/web-scrape#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12",
+    "mongoose": "^5.3.5",
+    "morgan": "^1.9.1"
+  }
+}
