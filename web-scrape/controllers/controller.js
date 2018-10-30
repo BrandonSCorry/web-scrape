@@ -96,7 +96,7 @@ router.post("/posts/:id", function(req, res) {
   db.Comment.create(req.body)
     .then(function(dbComment) {
 
-      return dbComment.findOneAndUpdate({ _id: req.params.id }, { comment: db.Comment._id }, { new: true });
+      dbComment.findOneAndUpdate({ _id: req.params.id }, { comment: db.Comment._id }, { new: true });
     })
     .then(function(dbPost) {
       res.json(dbPost);
